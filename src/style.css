@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -27,8 +29,10 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
+  justify-content: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #d4adbf;
 }
 
 h1 {
@@ -83,6 +87,48 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.turno-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fbf4d7;
+  border: 3px solid #090909;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.numero-turno {
+  font-size: 6rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.texto-turno {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+
+.main-button-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.introducir-numero-container {
+  display: flex;
+  justify-content: center;
+}
+
+#introducir-numero {
+  margin-top: 50px;
+  display: flex;
+  background-color: #980060;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -92,6 +138,7 @@ button:focus-visible {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    color: white;
+    background-color: #00917d;
   }
 }
