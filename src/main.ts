@@ -34,4 +34,19 @@ reset?.addEventListener("click", resetTurno);
 
 actualizarTurno();
 
+const turnoInput: HTMLInputElement | null = document.getElementById(
+  "nuevoTurno"
+) as HTMLInputElement;
+const turnoBtn: HTMLElement | null = document.getElementById("nuevoTurnoBtn");
 
+turnoBtn?.addEventListener("click", () => {
+  if (turnoInput !== null) {
+    const turnoValue = turnoInput.value;
+    const turnoNumber = parseInt(turnoValue);
+
+    if (turnoNumber > 0) {
+      numeroActual = turnoNumber;
+      actualizarTurno();
+    }
+  }
+});

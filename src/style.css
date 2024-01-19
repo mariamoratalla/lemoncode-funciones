@@ -113,7 +113,7 @@ button:focus-visible {
 }
 
 .main-button-container {
-  margin-top: 10px;
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -121,12 +121,6 @@ button:focus-visible {
 .introducir-numero-container {
   display: flex;
   justify-content: center;
-}
-
-#introducir-numero {
-  margin-top: 50px;
-  display: flex;
-  background-color: #980060;
 }
 
 @media (prefers-color-scheme: light) {
